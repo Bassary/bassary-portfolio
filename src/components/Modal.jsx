@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import './style/Modal.scss'
+import './style/Modal.scss'
 // import { motion } from "framer-motion";
 
 function Modal({ image, title, texteContent, className}) {
@@ -21,7 +21,7 @@ function Modal({ image, title, texteContent, className}) {
   return (
     <>
       <button onClick={toggleModal} className={className}>
-        <span>{title}</span>
+        <h3>{title}</h3>
         {image}
       </button>
     </>

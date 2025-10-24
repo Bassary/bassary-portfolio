@@ -10,7 +10,7 @@ $main-button-hover : #D8BEFF;
 // MIXINES *****************
 
 @mixin button-hover-light() {
-    box-shadow: 0px 0px 33px #9955FF;
+    box-shadow: 0px 0px 25px #9955FF;
 }
 
 @mixin background-linear() {
@@ -31,8 +31,7 @@ body {
 // FONT
 
 h1,
-h2,
-h3 {
+h2 {
     color: $main-color;
 }
 
@@ -46,6 +45,10 @@ p {
 
 h2 {
     font-size: 40px;
+}
+
+h3 {
+    font-size: 24px;
 }
 
 .h1-frontend,

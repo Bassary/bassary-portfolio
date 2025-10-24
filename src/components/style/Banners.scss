@@ -4,3 +4,31 @@
     display: flex;
     gap: 25px;
 }
+
+@keyframes defilement {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.conteneur__liste-image-defilement {
+    overflow: hidden;
+    width: 100%;
+
+    .liste-image-defilement {
+        display: flex;
+        animation: defilement 20s linear infinite;
+        width: max-content;
+        gap: 25px;
+        padding-right: 25px;
+
+        .image-defilement {
+            height: 42px;
+        }
+
+    }
+}

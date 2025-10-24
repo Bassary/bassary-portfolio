@@ -3,7 +3,20 @@
 section {
     display: flex;
     align-items: center;
-    gap: 80px;
-    margin-top: 50px;
+    gap: 40px;
+    margin-top: 90px;
     flex-direction: column;
+
+    .container__buttons {
+        display: flex;
+        gap: 25px;
+    }
+
+    .container__mes-outils {
+        display: flex;
+        gap: 25px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 890px;
+    }
 }

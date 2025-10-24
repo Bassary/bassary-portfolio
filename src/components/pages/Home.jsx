@@ -33,43 +33,53 @@ function Home() {
                     />
                 </section>
                 <section>
-                    <Button classname={"second-button"} content={"Télécharger mon CV"}/>
-                    <Button classname={"second-button"} content={"GitHub"}/>
+                    <div className='container__buttons'>
+                        <Button classname={"second-button"} content={"Télécharger mon CV"}/>
+                        <Button classname={"second-button"} content={"GitHub"}/>
+                    </div>
                 </section>
                 <section>
                     <h2>Mes outils de travail</h2>
-                    <div>
+                    <div className='container__mes-outils'>
                         <Modal
                             title={"React"}
                             image={<img src='./src/assets/logo_react.svg' alt='Logo React'/>}
+                            className={"button__default button__react"}
                         />
                         <Modal
                             title={"Redux"}
                             image={<img src='./src/assets/logo_redux.svg' alt='Logo React'/>}
+                            className={"button__default button__redux"}
                         />
                         <Modal
                             title={"JavaScript"}
                             image={<img src='./src/assets/logo_js.svg' alt='Logo React'/>}
+                            className={"button__default button__javascript"}
                         />
                         <Modal
                             title={"GitHub"}
-                            image={<img src='./src/assets/logo_github.svg' alt='Logo React'/>}
+                            image={<img src='./src/assets/logo_github.svg' alt='Logo GitHub'/>}
+                            className={"button__default button__github"}
                         />
                         <Modal
                             title={"HTML/CSS"}
-                            image={<img src='./src/assets/logo_react.svg' alt='Logo React'/>}
+                            image={<img src='./src/assets/logo_html_css.svg' alt='Logo HTML CSS'/>}
+                            className={"button__default button__html-css"}
                         />
                         <Modal
                             title={"SASS"}
-                            image={<img src='./src/assets/logo_sass.svg' alt='Logo React'/>}
+                            image={<img src='./src/assets/logo_sass.svg' alt='Logo SASS'/>}
+                            className={"button__default button__sass"}
                         />
                         <Modal
                             title={"Figma"}
-                            image={<img src='./src/assets/logo_figma.svg' alt='Logo React'/>}
+                            image={<img src='./src/assets/logo_figma.svg' alt='Logo Figma'/>}
+                            className={"button__default button__figma"}
                         />
                         <Modal
                             title={"Notion"}
-                            image={<img src='./src/assets/logo_notion.svg' alt='Logo React'/>}
+                            image={<img src='./src/assets/logo_notion.svg' alt='Logo Notion'/>}
+                            className={"button__default button__notion"}
                         />
                     </div>
                 </section>
