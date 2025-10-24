@@ -1,0 +1,65 @@
+// VARAIBLES ***************
+
+$main-color : #CCA9FF;
+$second-color: #B684FF;
+$background-color : #030019;
+$button-default : #0D006E;
+
+$main-button-hover : #D8BEFF;
+
+// MIXINES *****************
+
+@mixin button-hover-light() {
+    box-shadow: 0px 0px 33px #9955FF;
+}
+
+@mixin background-linear() {
+    background: linear-gradient(to right, #01003D, #2F0059);
+}
+
+// GÉNERAL ****************
+
+// * {
+//     margin: 0;
+//     padding: 0;
+// }
+
+body {
+    background-color: $background-color;
+}
+
+// FONT
+
+h1,
+h2,
+h3 {
+    color: $main-color;
+}
+
+p {
+    color: $second-color;
+}
+
+.h1-frontend {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.h1-frontend,
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.h1-design {
+    font-family: "Reenie Beanie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+}

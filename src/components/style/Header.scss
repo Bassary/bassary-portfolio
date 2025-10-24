@@ -1,0 +1,10 @@
+@import './main.scss';
+
+.background-header {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include background-linear;
+    margin-top: 72px;
+}

@@ -1,0 +1,9 @@
+@import './main.scss';
+
+section {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-top: 50px;
+    flex-direction: column;
+}
