@@ -83,15 +83,18 @@ function Home() {
                         />
                     </div>
                 </section>
-                <section>
-                    <div>
-                        <h2>Premier contact</h2>
-                        <p>Vous êtes prêt à vous lancer dans un projet ?
-                            Vous avez besoin de rafraîchir un site ou tout simplement des questions ?
+                <section className='section-form'>
+                    <div className='section-form__texte-form'>
+                        <div className='texte'>
+                            <h2>Premier contact</h2>
+                            <p>Vous êtes prêt à vous lancer dans un projet ?
+                            Vous avez besoin de rafraîchir un site ou tout simplement des questions ?<br></br>
                             Il n’y a pas meilleure façon qu’un premier contact pour briser la glace
-                        </p>
+                            </p>
+                        </div>
+                        <Contact />
                     </div>
-                    <Contact />
+                    <img className='illustration' src='./src/assets/illustration_contact.svg'/>
                 </section>
             </main>
             <Footer />

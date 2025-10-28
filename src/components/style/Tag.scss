@@ -1,0 +1,20 @@
+@import './main.scss';
+
+.tag {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 3px 12px;
+    width: fit-content;
+    background-color: $background-tag;
+    transition: ease-in-out 150ms;
+    opacity: 0.8;
+
+    &:hover {
+        transform: scale(1.06);
+        opacity: 1;
+    }
+
+}

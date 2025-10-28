@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 // import emailjs from '@emailjs/browser';
-// import './style/Contact.scss'
+import './style/Contact.scss'
 // import Spinner from './Spiner';
 // import Alert from './Alert'
 
@@ -76,7 +76,7 @@ export const Contact = () => {
             <label htmlFor="message">Message :</label>
             <textarea name="message" value={formData.message} onChange={handleChange} />
         </div>
-        {btnHidden && <button className='btn-submit main-btn' type="submit"
+        {btnHidden && <button id='button' className='main-button' type="submit"
         style={{display: 'block'}}
         onClick={()=> setIsLoading(true)}
         >

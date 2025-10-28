@@ -3,7 +3,10 @@
 $main-color : #CCA9FF;
 $second-color: #B684FF;
 $background-color : #030019;
+$background-input : #020013;
 $button-default : #0D006E;
+$content-tag : #411681;
+$background-tag: #F0A4FF;
 
 $main-button-hover : #D8BEFF;
 
@@ -13,8 +16,16 @@ $main-button-hover : #D8BEFF;
     box-shadow: 0px 0px 25px #9955FF;
 }
 
+@mixin card-hover-light() {
+    box-shadow: 0px 0px 244px #9354F1;
+}
+
 @mixin background-linear() {
     background: linear-gradient(to right, #01003D, #2F0059);
+}
+
+@mixin background-linear-card() {
+    background: linear-gradient(to right, #040321, #1A0022);
 }
 
 // GÉNERAL ****************
@@ -31,7 +42,9 @@ body {
 // FONT
 
 h1,
-h2 {
+h2,
+input,
+textarea {
     color: $main-color;
 }
 
@@ -39,7 +52,13 @@ p {
     color: $second-color;
 }
 
-.h1-frontend {
+.tag__content {
+    color: $content-tag;
+    font-weight: 600;
+}
+
+.h1-frontend,
+h1 {
     font-size: 64px;
 }
 
@@ -51,8 +70,15 @@ h3 {
     font-size: 24px;
 }
 
+input,
+textarea {
+    font-size: 15px;
+}
+
 .h1-frontend,
-h2 {
+h1,
+h2,
+label {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -63,6 +89,23 @@ h2 {
     font-size: 100px;
 }
 
-p {
+p,
+input,
+textarea,
+.tag__content {
     font-family: "Inter", sans-serif;
+}
+
+// INPUT & TEXTAERA *****
+
+input,
+textarea {
+    padding: 6px 12px 6px 12px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 300px;
 }

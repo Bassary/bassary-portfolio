@@ -20,3 +20,40 @@ section {
         max-width: 890px;
     }
 }
+
+.section-form {
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    justify-content: center;
+
+    .illustration {
+        width: 600px;
+        position: relative;
+        right: 0px;
+    }
+
+    &__texte-form {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        width: 50%;
+
+        .texte {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 25px;
+            align-items: start;
+        }
+
+    }
+}

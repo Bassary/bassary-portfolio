@@ -1,0 +1,119 @@
+@import './main.scss';
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-parcours {
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+    margin-top: 0;
+    margin-bottom: 90px;
+    max-width: 1500px;
+    width: auto;
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        max-width: 890px;
+        position: absolute;
+        z-index: 9;
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        &__tag {
+            display: flex;
+            gap: 10px;
+        }
+
+        &__illustration {
+            width: 100%;
+            display: flex;
+            justify-content: end;
+
+            .illustration-parcours {
+                height: 750px;
+            }
+        }
+
+    }
+}
+
+.section-outils {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 80px;
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        transform: translateY(0);
+        transition: ease-in-out 450ms;
+        font-weight: 500;
+        opacity: 0.7;
+
+        img {
+            height: 50px;
+        }
+
+        p {
+            color: $main-color;
+        }
+
+        &:hover {
+            transform: translateY(-15px);
+            transition: ease-in-out 200ms;
+            opacity: 1;
+        }
+
+    }
+}
+
+.section-devis {
+    margin-bottom: 100px;
+
+    &__card {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+
+
+    .container-card {
+        width: 300px;
+        padding-top: 72px !important;
+        padding-bottom: 72px !important;
+
+        &__texte {
+
+            &--image {
+                display: flex;
+                justify-content: center;
+            }
+
+            img {
+                width: 100px;
+            }
+        }
+
+        &:hover {
+            @include card-hover-light;
+            transition: ease-in-out 250ms;
+        }
+
+    }
+}

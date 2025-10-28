@@ -1,27 +1,27 @@
+import { Link } from "react-router-dom"
 import Button from "./Button"
+import './style/Footer.scss'
 
 function Footer() {
     return (
         <footer>
-            <img src="./src/assets/logo.svg" alt="logo bassary" />
+            <div className="container-footer">
+                <img src="./src/assets/logo.svg" alt="logo bassary" />
             <div>
-                <Button
-                    classname={""}
-                    link={""}
-                    content={"Mon parcours"}
-                />
-                <Button
-                    classname={""}
-                    link={""}
-                    content={"Mes projets"}
-                />
-                <Button
-                    classname={""}
-                    link={""}
-                    content={"Contact"}
-                />
+                <Link to={"/mon-parcours"} className="footer-button">
+                    Mon parcours
+                </Link>
+                <Link to={"/mes-projets"} className="footer-button">
+                    Mes projets
+                </Link>
+                <Link to={""} className="footer-button">
+                    Contact
+                </Link>
             </div>
-            <p>Tout droit réserver - ©Bassary 2025</p>
+            <p>Tous droits réservés - ©Bassary 2025</p>
+
+            </div>
+            
         </footer>
     )
 }
