@@ -8,6 +8,7 @@ import Modal from '../Modal'
 import Contact from '../Contact'
 import Footer from '../Footer'
 import NavbarSticky from '../NavbarSticky'
+import CV from '../../assets/CV.pdf'
 
 function Home() {
     return (
@@ -27,15 +28,15 @@ function Home() {
                     />
                     <Card
                         title={"Mes projets"}
-                        texte={"De l’intégration, ou d’un site créé de A à Z, découvrez les projets sur lesquels j’ai travaillé"}
+                        texte={"De l’intégration ou d’un site créé de A à Z, découvrez les projets sur lesquels j’ai travaillé"}
                         button={<Button classname={"main-button"} content={"Découvrez mon travail"} link={"/mes-projets"}/>}
                         banner={<BannerMove />}
                     />
                 </section>
                 <section>
                     <div className='container__buttons'>
-                        <Button classname={"second-button"} content={"Télécharger mon CV"}/>
-                        <Button classname={"second-button"} content={"GitHub"}/>
+                        <Button classname={"second-button"} content={"Télécharger mon CV"} link={CV} target={"_blank"}/>
+                        <Button classname={"second-button"} content={"GitHub"} link={"https://github.com/Bassary"} target={"_blank"}/>
                     </div>
                 </section>
                 <section>

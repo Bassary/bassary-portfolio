@@ -116,6 +116,7 @@ function About() {
                     <Button
                         classname={"main-button"}
                         content={"Demander un devis"}
+                        link={"/contact"}
                     />
                 </section>
             </main>

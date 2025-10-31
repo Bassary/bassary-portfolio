@@ -25,47 +25,83 @@
 .button__react:hover {
     background-color: #000F11;
     box-shadow: 0px 0px 25px #00D8FF;
-    color: #DAF9FF;
+
+    &:hover h3 {
+        color: #DAF9FF;
+        transition: ease-in-out 250ms;
+    }
 }
 
 .button__redux:hover {
     background-color: #10002A;
     box-shadow: 0px 0px 25px #764ABC;
-    color: #E8DAFF;
+
+    &:hover h3 {
+        color: #E8DAFF;
+        transition: ease-in-out 250ms;
+    }
 }
 
 .button__javascript:hover {
     background-color: #0B0800;
     box-shadow: 0px 0px 25px #FFC300;
-    color: #FFFAEA;
+
+    &:hover h3 {
+        color: #FFFAEA;
+        transition: ease-in-out 250ms;
+    }
 }
 
 .button__notion:hover {
     background-color: #0B0B0B;
     box-shadow: 0px 0px 25px #F5F5F5;
-    color: #F5F5F5;
+
+    &:hover h3 {
+        color: #F5F5F5;
+        transition: ease-in-out 250ms;
+    }
 }
 
 .button__github:hover {
     background-color: #0B0B0B;
     box-shadow: 0px 0px 25px #F5F5F5;
-    color: #F5F5F5;
+
+
+    &:hover h3 {
+        color: #F5F5F5;
+        transition: ease-in-out 250ms;
+    }
 }
 
 .button__html-css:hover {
     background: linear-gradient(to right, #000F17, #1D0A00);
     box-shadow: 0px 0px 25px $main-color;
-    color: #F5F5F5;
+
+
+    &:hover h3 {
+        color: #F5F5F5;
+        transition: ease-in-out 250ms;
+    }
 }
 
 .button__sass:hover {
     background-color: #100008;
     box-shadow: 0px 0px 25px #CB6699;
-    color: #FFDAED;
+
+
+    &:hover h3 {
+        color: #FFDAED;
+        transition: ease-in-out 250ms;
+    }
 }
 
 .button__figma:hover {
     background-color: #000617;
     box-shadow: 0px 0px 25px $main-color;
-    color: #F3EAFF;
+
+
+    &:hover h3 {
+        color: #F3EAFF;
+        transition: ease-in-out 250ms;
+    }
 }

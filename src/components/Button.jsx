@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom"
 import './style/button.scss'
 
-function Button({ classname, link, content, selected }) {
+function Button({ classname, link, content, target}) {
     return (
-        <Link id="button" className={classname} to={link}>{content}</Link>
+        <Link target={target} id="button" className={classname} to={link}>{content}</Link>
     )
 }
 

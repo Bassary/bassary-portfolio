@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import About from './components/pages/About.jsx'
 import Home from './components/pages/Home.jsx'
 import Work from './components/pages/Work.jsx'
+import FormContact from './components/pages/FormContact.jsx'
 
 
 
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/mes-projets",
     element: <Work />,
+  },
+  {
+    path: "/contact",
+    element: <FormContact />,
   }
 ])
 

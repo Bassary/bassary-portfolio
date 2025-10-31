@@ -14,7 +14,7 @@ function Footer() {
                 <Link to={"/mes-projets"} className="footer-button">
                     Mes projets
                 </Link>
-                <Link to={""} className="footer-button">
+                <Link to={"/contact"} className="footer-button">
                     Contact
                 </Link>
             </div>

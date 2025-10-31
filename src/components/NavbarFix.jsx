@@ -7,7 +7,7 @@ function NavbarFix() {
             <img src="./src/assets/logo.svg" alt="logo bassary" />
             <Button
                 classname={"main-button z-index-button"}
-                link={""}
+                link={"/contact"}
                 content={"Me contacter"}
             />
         </div>
