@@ -12,17 +12,9 @@ function FormContact () {
             />
             <NavbarSticky />
         <main>
-            <section className='section-form'>
-                <div className='section-form__texte-form'>
-                    <div className='texte'>
-                        <h2>Faisons connaissance</h2>
-                        <p>Vous êtes prêt à vous lancer dans un projet ?
-                        Vous avez besoin de rafraîchir un site ou tout simplement des questions ?<br></br>
-                        Il n’y a pas meilleure façon qu’un premier contact pour briser la glace
-                        </p>
-                    </div>
+            <section className='section-form form-contact'>
                     <Contact />
-                </div>
+                
                 <img className='illustration' src='./src/assets/illustration_contact.svg'/>
             </section>
             

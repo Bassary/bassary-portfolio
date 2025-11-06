@@ -32,8 +32,10 @@ function Work() {
                                     <Tag content={"React"}/>
                                     <Tag content={"SEO"}/>
                                 </div>
-                                
-                                <Button classname={"second-button"} content={"Visiter le site"} link={"https://lokowls.com/"} target={'_blank'}/>
+                                <div className='container-site-web__button'>
+                                    <Button classname={"second-button"} content={"GitHub"} link={"https://github.com/Bassary/Lokowls"} target={'_blank'}/>
+                                    <Button classname={"main-button"} content={"Visiter le site"} link={"https://lokowls.com/"} target={'_blank'}/>
+                                </div>
                             </div>
                         </div>
                         <div className='container-site-web'>
@@ -56,7 +58,7 @@ function Work() {
                             <CardSiteWeb
                                 backgroundImage={<img className='background-image' src='./src/assets/capture-sophiebluel.png'/>}
                                 title={"Sophie Bluel"}
-                                texteCategorie={"Site vitrine pour architecte d'interieur"}
+                                texteCategorie={"Site vitrine pour architecte d'intérieur"}
                                 texteRealisation={"intégration en JavaScript, communication avec l'API"}
                                 texteTechnologie={"JavaScript, API, Swagger"}
                             />
@@ -74,23 +76,19 @@ function Work() {
                             <CardSiteWeb
                                 backgroundImage={<img className='background-image' src='./src/assets/capture-argentbank.png'/>}
                                 title={"ArgentBank"}
-                                texteCategorie={"Aplication banquaire"}
-                                texteRealisation={"Intégration, connexion, récupération des donné"}
+                                texteCategorie={"Application bancaire"}
+                                texteRealisation={"Intégration, connexion, récupération des données"}
                                 texteTechnologie={"React js + Vite, NodeJs"}
                             />
                             <div className='container-site-web__button-tag'>
                                 <div className='flex-tag'>
                                     <Tag content={"Login"}/>
                                     <Tag content={"NodeJs"}/>
-                                    
                                 </div>
                                 <Button classname={"second-button"} content={"GitHub"} link={"https://github.com/Bassary/Argent-Bank-FrontEnd"} target={"_blank"}/>
                             </div>
                         </div>
                     </div>
-                    
-                    
-
                 </section>
                 
             </main>

@@ -1,5 +1,8 @@
 @import './main.scss';
 
+.form-contact {
+    margin-top: 0 !important;
+}
 
 form {
     display: flex;
@@ -53,9 +56,11 @@ form {
     .message {
         display: flex;
         gap: 16px;
+        align-items: center;
+
 
         img {
-            width: 26px;
+            width: 32px;
         }
     }
 }

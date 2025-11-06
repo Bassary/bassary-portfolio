@@ -2,7 +2,6 @@
 
 
 @mixin container-card() {
-    position: relative;
     display: flex;
     align-items: center;
     gap: 50px;
@@ -11,36 +10,12 @@
     margin-left: 18px;
     margin-right: 18px;
     border-radius: 20px;
+    border: 1px solid $second-color;
     @include background-linear-card;
 }
 
 .container-card {
     @include container-card;
-
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 2;
-        border-radius: 20px;
-        padding: 1px;
-        background: linear-gradient(to bottom right, #4F30C0, #734BAE);
-
-        // "Version préfixée" pour Chrome/Safari
-        -webkit-mask:
-            linear-gradient(#fff 0 0) content-box,
-            linear-gradient(#fff 0 0);
-        -webkit-mask-composite: xor;
-
-        // "Version standard" (pour les navigateurs qui la supportent)
-        mask:
-            linear-gradient(#fff 0 0) content-box,
-            linear-gradient(#fff 0 0);
-        mask-composite: exclude;
-    }
 
     &__texte {
         display: flex;

@@ -34,10 +34,6 @@ $main-button-hover : #D8BEFF;
 
 // GÉNERAL ****************
 
-// * {
-//     margin: 0;
-//     padding: 0;
-// }
 
 body {
     background-color: $background-color;
@@ -48,7 +44,8 @@ body {
 h1,
 h2,
 input,
-textarea {
+textarea,
+span {
     color: $main-color;
 }
 
@@ -76,8 +73,13 @@ h3 {
 }
 
 input,
-textarea {
+textarea,
+span {
     font-size: 15px;
+}
+
+span {
+    font-weight: 500;
 }
 
 .h1-frontend,
@@ -98,7 +100,8 @@ label {
 p,
 input,
 textarea,
-.tag__content {
+.tag__content,
+span {
     font-family: "Inter", sans-serif;
 }
 
@@ -114,4 +117,211 @@ textarea {
 textarea {
     resize: none;
     height: 300px;
+}
+
+// MEDIA QUERIES ************************
+
+@media (max-width: 400px) {
+    .modal__content {
+        width: 98% !important;
+
+        .info-modal__container {
+            padding: 36px 48px;
+        }
+    }
+
+}
+
+@media (max-width: 890px) {
+    .container-footer {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .footer-button {
+        padding-right: 6px !important;
+        padding-bottom: 6px !important;
+    }
+
+    .container-site-web {
+
+        &__card {
+            width: fit-content !important;
+            height: 300px !important;
+            cursor: pointer;
+
+            .background-shadow {
+                width: 100% !important;
+            }
+        }
+
+        &__button-tag {
+            flex-direction: column;
+            align-items: start !important;
+            gap: 20px;
+        }
+
+        .flex-tag {
+            flex-wrap: wrap;
+        }
+
+    }
+
+
+
+}
+
+@media (max-width: 1080px) {
+
+    .container-footer,
+    .navbar {
+        padding: 9px 9px;
+        z-index: 9999;
+
+        img {
+            height: 40px;
+        }
+    }
+
+    .section-form {
+        margin-left: 9px !important;
+        margin-right: 9px !important;
+    }
+
+
+    section {
+        gap: 20px;
+        margin-top: 50px;
+        margin-left: 9px;
+        margin-right: 9px;
+    }
+
+    .h1-frontend {
+        font-size: 32px;
+    }
+
+    .h1-design {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    #button:not(.close-modal),
+    a {
+        font-size: 14px;
+        padding: 9px 18px !important;
+        z-index: 99;
+    }
+
+    .navbar-sticky {
+        padding-top: 66px;
+        margin: 0;
+        z-index: 99;
+        @include background-linear();
+        align-items: center;
+        gap: 5px;
+        z-index: 999;
+    }
+
+    .background-header {
+        display: none;
+
+    }
+
+    .container-card {
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        width: -moz-available;
+        padding: 48px 24px;
+        margin-left: 0;
+        margin-right: 0;
+
+        &__texte {
+            width: 100%;
+        }
+
+        &__texte--image {
+            display: none;
+        }
+
+
+    }
+
+    .banner-logo-horizontal {
+        flex-wrap: wrap;
+    }
+
+    .liste-image-defilement {
+        flex-direction: initial;
+        height: 50px;
+    }
+
+    .section-form {
+        margin-left: 18px;
+        margin-right: 18px;
+
+
+        &__texte-form {
+            width: 100%;
+        }
+
+        .illustration {
+            display: none;
+        }
+
+    }
+
+    .section-parcours {
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+
+        .container {
+            position: initial;
+            margin-left: 9px;
+            margin-right: 9px;
+
+            &__content {
+                gap: 20px;
+            }
+
+            &__tag {
+                flex-wrap: wrap;
+            }
+        }
+
+        .container__illustration {
+            display: none;
+        }
+
+    }
+
+    .section-outils {
+        flex-wrap: wrap;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        &__logo {
+            opacity: 1;
+        }
+    }
+
+    .section-devis {
+        margin-bottom: 80px;
+
+        &__card {
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .tag__content {
+        font-size: 14px;
+    }
+
+
 }

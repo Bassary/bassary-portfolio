@@ -9,6 +9,8 @@ import Contact from '../Contact'
 import Footer from '../Footer'
 import NavbarSticky from '../NavbarSticky'
 import CV from '../../assets/CV.pdf'
+import '../style/Modal.scss'
+import InfoModal from '../InfoModal'
 
 function Home() {
     return (
@@ -43,44 +45,110 @@ function Home() {
                     <h2>Mes outils de travail</h2>
                     <div className='container__mes-outils'>
                         <Modal
-                            title={"React"}
+                            buttonTitle={"React"}
                             image={<img src='./src/assets/logo_react.svg' alt='Logo React'/>}
-                            className={"button__default button__react"}
+                            className={"modal__content info-modal__react"}
+                            buttonClassName={"button__default button__react"}
+                            children={
+                                <InfoModal
+                                    image={<img src='./src/assets/logo_react.svg' alt='Logo React'/> }
+                                    title={'React'}
+                                    texte={'React est une des bibliothèques les plus utilisées (ex. FaceBook, Instagram, Netflix) Elle permet de créer des interfaces utilisateur dynamiques, des applications web modernes, interactives et facilite la maintenance du code'}
+                                />
+                            }
                         />
                         <Modal
-                            title={"Redux"}
+                            buttonTitle={"Redux"}
                             image={<img src='./src/assets/logo_redux.svg' alt='Logo React'/>}
-                            className={"button__default button__redux"}
+                            className={"modal__content info-modal__redux"}
+                            buttonClassName={"button__default button__redux"}
+                            children={
+                                <InfoModal
+                                    image={<img src='./src/assets/logo_redux.svg' alt='Logo Redux'/> }
+                                    title={'Redux'}
+                                    texte={"Souvent utilisé avec React. Redux est un gestionnaire d’état pour les applications JavaScript. Il centralise toutes les données de l’application dans un seul endroit, ce qui facilite la gestion des données complexes, le partage d'information et la maintenance du code"}
+                                />
+                            }
                         />
                         <Modal
-                            title={"JavaScript"}
+                            buttonTitle={"JavaScript"}
                             image={<img src='./src/assets/logo_js.svg' alt='Logo React'/>}
-                            className={"button__default button__javascript"}
+                            className={"modal__content info-modal__javascript"}
+                            buttonClassName={"button__default button__javascript"}
+                            children={
+                                <InfoModal
+                                    image={<img src='./src/assets/logo_js.svg' alt='Logo JavaScript'/> }
+                                    title={'JavaScript'}
+                                    texte={'JavaScript est un langage de programmation qui permet d’ajouter de l’interactivité aux pages web. Comme des animations, automatiser des tâches ou encore communiquer avec des serveurs pour récupérer ou envoyer des données'}
+                                />
+                            }
                         />
                         <Modal
-                            title={"GitHub"}
+                            buttonTitle={"GitHub"}
                             image={<img src='./src/assets/logo_github.svg' alt='Logo GitHub'/>}
-                            className={"button__default button__github"}
+                            className={"modal__content info-modal__github"}
+                            buttonClassName={"button__default button__github"}
+                            children={
+                                <InfoModal
+                                    image={<img src='./src/assets/logo_github.svg' alt='Logo github'/> }
+                                    title={'GitHub'}
+                                    texte={'GitHub est une plateforme en ligne incontournable, qui permet d’héberger et de sauvegarder du code source. C’est un réseau social pour développeurs qui participe à la collaboration et au partage du code'}
+                                />
+                            }
+
                         />
                         <Modal
-                            title={"HTML/CSS"}
+                            buttonTitle={"HTML/CSS"}
                             image={<img src='./src/assets/logo_html_css.svg' alt='Logo HTML CSS'/>}
-                            className={"button__default button__html-css"}
+                            className={"modal__content info-modal__html-css"}
+                            buttonClassName={"button__default button__html-css"}
+                            children={
+                                <InfoModal
+                                    image={<img src='./src/assets/logo_html_css.svg' alt='Logo HTML CSS'/> }
+                                    title={'HTML/CSS'}
+                                    texte={"L'HTML est le squelette d'une page web et le CSS son style. Ensemble, ils sont la base du code et de l'accessibilité web. Bien qu'incontournable, il est nécessaire d'avoir une bonne connaissance de ces outils et des navigateurs pour repérer certains bugs"}
+                                />
+                            }
+
                         />
                         <Modal
-                            title={"SASS"}
+                            buttonTitle={"SASS"}
                             image={<img src='./src/assets/logo_sass.svg' alt='Logo SASS'/>}
-                            className={"button__default button__sass"}
+                            className={"modal__content info-modal__sass"}
+                            buttonClassName={"button__default button__sass"}
+                            children={
+                                <InfoModal
+                                    image={<img src='./src/assets/logo_html_sass.svg' alt='Logo SASS'/> }
+                                    title={'SASS'}
+                                    texte={"SASS est une extension de CSS qui permet d’écrire du style de manière plus efficace. Il ajoute des fonctionnalités, ce qui évite les répétitions et améliorer l'organisation et la maintenance du code"}
+                                />
+                            }
                         />
                         <Modal
-                            title={"Figma"}
+                            buttonTitle={"Figma"}
                             image={<img src='./src/assets/logo_figma.svg' alt='Logo Figma'/>}
-                            className={"button__default button__figma"}
+                            className={"modal__content info-modal__figma"}
+                            buttonClassName={"button__default button__figma"}
+                            children={
+                                <InfoModal
+                                    image={<img src='./src/assets/logo_figma.svg' alt='Logo Figma'/> }
+                                    title={'Figma'}
+                                    texte={'Figma est un outil très populaire de design collaboratif en ligne. Il permet de créer des maquettes d’interfaces et prototypes interactifs avant de coder. Cela évite de gagner du temps en testant le parcours utilisateur.'}
+                                />
+                            }
                         />
                         <Modal
-                            title={"Notion"}
+                            buttonTitle={"Notion"}
                             image={<img src='./src/assets/logo_notion.svg' alt='Logo Notion'/>}
-                            className={"button__default button__notion"}
+                            className={"modal__content info-modal__notion"}
+                            buttonClassName={"button__default button__notion"}
+                             children={
+                                <InfoModal
+                                    image={<img src='./src/assets/logo_notion.svg' alt='Logo Notion'/> }
+                                    title={'Notion'}
+                                    texte={"Notion est un outil collaboratif tout-en-un qui combine prise de notes, gestion de projets, bases de données et wiki. Il est très populaire pour organiser son travail ou ses études. Idéal pour suivre l'avancée d'un projet"}
+                                />
+                            }
                         />
                     </div>
                 </section>

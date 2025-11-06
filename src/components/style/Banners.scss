@@ -16,13 +16,13 @@
 }
 
 .conteneur__liste-image-defilement {
-    overflow: hidden;
+    // overflow: hidden;
     width: 100%;
 
     .liste-image-defilement {
-        display: flex;
+        display: inline-flex;
         animation: defilement 20s linear infinite;
-        width: max-content;
+        // width: max-content;
         gap: 25px;
         padding-right: 25px;
 
