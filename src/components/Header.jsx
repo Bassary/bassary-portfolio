@@ -1,3 +1,4 @@
+import RightChangeAnimation from "./animations/RightChangeAnimation"
 import NavbarFix from "./NavbarFix"
 import './style/Header.scss'
 
@@ -6,7 +7,10 @@ function Header({title}) {
         <header>
             <NavbarFix />
             <div className="background-header">
-                <h1>{title}</h1>
+                <RightChangeAnimation>
+                    <h1>{title}</h1>
+                </RightChangeAnimation>
+                    
             </div>
         </header>
     )

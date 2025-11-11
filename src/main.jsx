@@ -5,30 +5,22 @@ import About from './components/pages/About.jsx'
 import Home from './components/pages/Home.jsx'
 import Work from './components/pages/Work.jsx'
 import FormContact from './components/pages/FormContact.jsx'
+import Layout from './components/Layout.jsx'
 
 
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element:
-      <Home />,
+    element: <Layout />,
+    children: [
+      { path: "/", element: <Home /> },
+      { path: "/mon-parcours", element: <About /> },
+      { path: "/mes-projets", element: <Work /> },
+      { path: "/contact", element: <FormContact /> },
+    ],
   },
-  {
-    path: "/mon-parcours",
-    element:
-      <About />,
-  },
-  {
-    path: "/mes-projets",
-    element: <Work />,
-  },
-  {
-    path: "/contact",
-    element: <FormContact />,
-  }
-])
+]);
 
 createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router} />
+    <RouterProvider router={router} />
 )

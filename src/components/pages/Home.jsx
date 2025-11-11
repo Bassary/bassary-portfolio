@@ -8,9 +8,11 @@ import Modal from '../Modal'
 import Contact from '../Contact'
 import Footer from '../Footer'
 import NavbarSticky from '../NavbarSticky'
-import CV from '../../assets/CV.pdf'
+import CV from '../../assets/CV_Bassary_Alexandre_Hariri.pdf'
 import '../style/Modal.scss'
 import InfoModal from '../InfoModal'
+import TopChangeAnimation from '../animations/TopChangeAnimation'
+import TopScrollAnimation from '../animations/TopScrollAnimation'
 
 function Home() {
     return (
@@ -21,27 +23,32 @@ function Home() {
             />
             <NavbarSticky />
             <main>
-                <section>
+                <section className='section-introduction'>
+                <TopChangeAnimation>
                     <Card
                         title={"Qui suis-je ?"}
                         texte={"Développer et designer Front-End depuis 2025, je crée un équilibre entre technicité, praticité et créativité au service de votre site"}
                         button={<Button classname={"main-button"} content={"Découvrez mon parcours"} link={"/mon-parcours"}/>}
                         banner={<BannerFix/>}
                     />
+                </TopChangeAnimation>
+                <TopChangeAnimation delay={0.2}>
                     <Card
                         title={"Mes projets"}
                         texte={"De l’intégration ou d’un site créé de A à Z, découvrez les projets sur lesquels j’ai travaillé"}
-                        button={<Button classname={"main-button"} content={"Découvrez mon travail"} link={"/mes-projets"}/>}
+                        button={<Button classname={"main-button"} content={"Découvrez mes projets"} link={"/mes-projets"}/>}
                         banner={<BannerMove />}
                     />
+                </TopChangeAnimation>
                 </section>
+                
                 <section>
                     <div className='container__buttons'>
                         <Button classname={"second-button"} content={"Télécharger mon CV"} link={CV} target={"_blank"}/>
                         <Button classname={"second-button"} content={"GitHub"} link={"https://github.com/Bassary"} target={"_blank"}/>
                     </div>
                 </section>
-                <section>
+                <TopScrollAnimation className={"section-outils"}>
                     <h2>Mes outils de travail</h2>
                     <div className='container__mes-outils'>
                         <Modal
@@ -98,15 +105,15 @@ function Home() {
 
                         />
                         <Modal
-                            buttonTitle={"HTML/CSS"}
-                            image={<img src='./src/assets/logo_html_css.svg' alt='Logo HTML CSS'/>}
-                            className={"modal__content info-modal__html-css"}
-                            buttonClassName={"button__default button__html-css"}
+                            buttonTitle={"L'IA"}
+                            image={<img src='./src/assets/logo_ia.svg' alt='Logo IA'/>}
+                            className={"modal__content info-modal__ia"}
+                            buttonClassName={"button__default button__ia"}
                             children={
                                 <InfoModal
-                                    image={<img src='./src/assets/logo_html_css.svg' alt='Logo HTML CSS'/> }
-                                    title={'HTML/CSS'}
-                                    texte={"L'HTML est le squelette d'une page web et le CSS son style. Ensemble, ils sont la base du code et de l'accessibilité web. Bien qu'incontournable, il est nécessaire d'avoir une bonne connaissance de ces outils et des navigateurs pour repérer certains bugs"}
+                                    image={<img src='./src/assets/logo_ia.svg' alt='Logo IA'/> }
+                                    title={"L'IA"}
+                                    texte={"L'IA est devenue un outil redoutable et indispensable dans la vie des développeurs. Bien utilisé, il permet de gagner du temps, d'optimiser des tâches répétitives, de vulgariser des aspects techniques ainsi que de corriger certains bugs."}
                                 />
                             }
 
@@ -118,7 +125,7 @@ function Home() {
                             buttonClassName={"button__default button__sass"}
                             children={
                                 <InfoModal
-                                    image={<img src='./src/assets/logo_html_sass.svg' alt='Logo SASS'/> }
+                                    image={<img src='./src/assets/logo_sass.svg' alt='Logo SASS'/> }
                                     title={'SASS'}
                                     texte={"SASS est une extension de CSS qui permet d’écrire du style de manière plus efficace. Il ajoute des fonctionnalités, ce qui évite les répétitions et améliorer l'organisation et la maintenance du code"}
                                 />
@@ -151,8 +158,8 @@ function Home() {
                             }
                         />
                     </div>
-                </section>
-                <section className='section-form'>
+                </TopScrollAnimation>
+                <TopScrollAnimation className={"section-form"} delay={0.2}>
                     <div className='section-form__texte-form'>
                         <div className='texte'>
                             <h2>Premier contact</h2>
@@ -164,7 +171,7 @@ function Home() {
                         <Contact />
                     </div>
                     <img className='illustration' src='./src/assets/illustration_contact.svg'/>
-                </section>
+                </TopScrollAnimation>
             </main>
             <Footer />
         </>

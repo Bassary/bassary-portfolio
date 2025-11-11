@@ -124,8 +124,8 @@ body.active-modal {
     }
 }
 
-.info-modal__html-css {
-    background: linear-gradient(to right, #000F17, #1D0A00);
+.info-modal__ia {
+    background: #0f0500;
     box-shadow: 0px 0px 250px rgb(255, 207, 175);
 
 
@@ -236,9 +236,9 @@ body.active-modal {
     }
 }
 
-.button__html-css:hover {
-    background: linear-gradient(to right, #000F17, #1D0A00);
-    box-shadow: 0px 0px 25px $main-color;
+.button__ia:hover {
+    background: #0f0500;
+    box-shadow: 0px 0px 25px rgb(255, 207, 175);
 
 
     &:hover h3 {

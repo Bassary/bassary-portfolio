@@ -39,6 +39,13 @@ body {
     background-color: $background-color;
 }
 
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
 // FONT
 
 h1,

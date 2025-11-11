@@ -1,3 +1,4 @@
+import TopChangeAnimation from "../animations/TopChangeAnimation"
 import Contact from "../Contact"
 import Footer from "../Footer"
 import Header from "../Header"
@@ -12,11 +13,16 @@ function FormContact () {
             />
             <NavbarSticky />
         <main>
-            <section className='section-form form-contact'>
+            <TopChangeAnimation className={'section-form form-contact'}>
+                <div className='section-form__texte-form'>
+                    <div className='texte'>
+                        <h2>Comme une lettre à la poste</h2>
+                        <p>Un projet, un devis, des questions : je suis là pour vous !</p>
+                    </div>
                     <Contact />
-                
+                </div>
                 <img className='illustration' src='./src/assets/illustration_contact.svg'/>
-            </section>
+            </TopChangeAnimation>
             
         </main>
         <Footer />

@@ -5,6 +5,7 @@ import NavbarSticky from '../NavbarSticky'
 import Tag from '../Tag'
 import Button from '../Button'
 import CardSiteWeb from '../CardSiteWeb'
+import TopChangeAnimation from '../animations/TopChangeAnimation'
 
 function Work() {
     return (
@@ -15,8 +16,8 @@ function Work() {
             />
             <NavbarSticky />
             <main className='main-container'>
-                <section className='section-card-site-web'>
-                    <h2>Sellection de site web</h2>
+                <TopChangeAnimation className={"section-card-site-web"}>
+                    <h2>Sélection de site web</h2>
                     <div className='parent'>
                         <div className='container-site-web'>
                             <CardSiteWeb
@@ -33,8 +34,8 @@ function Work() {
                                     <Tag content={"SEO"}/>
                                 </div>
                                 <div className='container-site-web__button'>
-                                    <Button classname={"second-button"} content={"GitHub"} link={"https://github.com/Bassary/Lokowls"} target={'_blank'}/>
                                     <Button classname={"main-button"} content={"Visiter le site"} link={"https://lokowls.com/"} target={'_blank'}/>
+                                    <Button classname={"second-button"} content={"GitHub"} link={"https://github.com/Bassary/Lokowls"} target={'_blank'}/>
                                 </div>
                             </div>
                         </div>
@@ -89,7 +90,7 @@ function Work() {
                             </div>
                         </div>
                     </div>
-                </section>
+                </TopChangeAnimation>
                 
             </main>
             <Footer />

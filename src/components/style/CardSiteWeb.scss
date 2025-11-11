@@ -2,6 +2,11 @@
 
 .section-card-site-web {
     margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 80px;
 
     .parent {
         display: flex;
