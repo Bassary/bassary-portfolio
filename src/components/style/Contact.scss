@@ -20,19 +20,19 @@ form {
         input,
         textarea {
             width: 100%;
-            border: $second-color 1px solid;
+            border: main.$second-color 1px solid;
             border-radius: 10px;
-            background-color: $background-input;
+            background-color: main.$background-input;
 
             &:focus {
-                border: $main-color 1px solid;
-                @include button-hover-light
+                border: main.$main-color 1px solid;
+                @include main.button-hover-light
             }
         }
 
         label {
             width: 64px;
-            color: $second-color;
+            color: main.$second-color;
 
         }
 

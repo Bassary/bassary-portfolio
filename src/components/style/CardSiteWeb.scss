@@ -73,7 +73,7 @@
                 }
 
                 &:focus {
-                    outline: 2px solid $main-button-hover;
+                    outline: 2px solid main.$main-button-hover;
                 }
             }
 

@@ -64,7 +64,7 @@
         }
 
         p {
-            color: $main-color;
+            color: main.$main-color;
         }
 
         &:hover {
@@ -108,7 +108,7 @@
         }
 
         &:hover {
-            @include card-hover-light;
+            @include main.card-hover-light;
             transition: ease-in-out 250ms;
         }
 

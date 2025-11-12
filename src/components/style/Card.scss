@@ -10,12 +10,12 @@
     margin-left: 18px;
     margin-right: 18px;
     border-radius: 20px;
-    border: 1px solid $second-color;
-    @include background-linear-card;
+    border: 1px solid main.$second-color;
+    @include main.background-linear-card;
 }
 
 .container-card {
-    @include container-card;
+    @include main.container-card;
 
     &__texte {
         display: flex;

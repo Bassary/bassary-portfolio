@@ -8,12 +8,12 @@
     border-radius: 5px;
     padding: 3px 12px;
     width: fit-content;
-    background-color: $background-tag;
+    background-color: main.$background-tag;
     transition: ease-in-out 150ms;
 
     &:hover {
         transform: scale(1.06);
-        @include tag-hover-light;
+        @include main.tag-hover-light;
         background-color: #f1b3fd;
     }
 

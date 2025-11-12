@@ -15,7 +15,7 @@
 
 .navbar-sticky a {
     text-decoration: none;
-    color: $second-color;
+    color: main.$second-color;
     font-weight: 500;
     padding: 8px 16px;
     font-family: "Inter", sans-serif;
@@ -25,16 +25,16 @@
 }
 
 .navbar-sticky a:hover {
-    border: 2px solid $second-color;
-    color: $main-button-hover;
+    border: 2px solid main.$second-color;
+    color: main.$main-button-hover;
     border-radius: 50px;
     transition: ease-in-out 250ms;
-    @include button-hover-light
+    @include main.button-hover-light
 }
 
 .navbar-sticky a.active {
-    border: 2px solid $main-button-hover;
+    border: 2px solid main.$main-button-hover;
     border-radius: 50px;
-    color: $main-button-hover;
-    @include button-hover-light
+    color: main.$main-button-hover;
+    @include main.button-hover-light
 }

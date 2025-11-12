@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom"
-import Button from "./Button"
-import './style/Footer.scss'
+import { Link } from "react-router-dom";
+import './style/Footer.scss';
 
 function Footer() {
     return (

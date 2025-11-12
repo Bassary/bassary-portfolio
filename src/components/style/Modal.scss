@@ -150,7 +150,7 @@ body.active-modal {
 
 .info-modal__figma {
     background-color: #000617;
-    box-shadow: 0px 0px 250px $main-color;
+    box-shadow: 0px 0px 250px main.$main-color;
 
 
     h2,
@@ -169,11 +169,11 @@ body.active-modal {
     flex-direction: column-reverse;
     gap: 10px;
     justify-content: center;
-    border: 2px solid $main-color;
+    border: 2px solid main.$main-color;
     border-radius: 15px;
-    background-color: $background-color;
+    background-color: main.$background-color;
     transition: ease-in-out 250ms;
-    color: $main-color;
+    color: main.$main-color;
     cursor: pointer;
 
     img {
@@ -260,7 +260,7 @@ body.active-modal {
 
 .button__figma:hover {
     background-color: #000617;
-    box-shadow: 0px 0px 25px $main-color;
+    box-shadow: 0px 0px 25px main.$main-color;
 
 
     &:hover h3 {
