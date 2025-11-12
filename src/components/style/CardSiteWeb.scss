@@ -1,4 +1,4 @@
-@use './main.scss';
+@use './main' as *;
 
 .section-card-site-web {
     margin-bottom: 80px;
@@ -73,7 +73,7 @@
                 }
 
                 &:focus {
-                    outline: 2px solid main.$main-button-hover;
+                    outline: 2px solid $main-button-hover;
                 }
             }
 

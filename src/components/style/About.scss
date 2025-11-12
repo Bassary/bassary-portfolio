@@ -1,4 +1,4 @@
-@use './main.scss';
+@use './main' as *;
 
 .section-parcours {
     display: flex;
@@ -64,7 +64,7 @@
         }
 
         p {
-            color: main.$main-color;
+            color: $main-color;
         }
 
         &:hover {
@@ -108,7 +108,7 @@
         }
 
         &:hover {
-            @include main.card-hover-light;
+            @include card-hover-light;
             transition: ease-in-out 250ms;
         }
 

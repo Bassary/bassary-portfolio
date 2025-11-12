@@ -1,7 +1,7 @@
-@use './main.scss';
+@use './main' as *;
 
 footer {
-    @include main.background-linear;
+    @include background-linear;
 
     .container-footer {
         display: flex;

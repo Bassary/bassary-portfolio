@@ -1,4 +1,4 @@
-@use './main.scss';
+@use './main' as *;
 
 .form-contact {
     margin-top: 50px !important;
@@ -20,19 +20,19 @@ form {
         input,
         textarea {
             width: 100%;
-            border: main.$second-color 1px solid;
+            border: $second-color 1px solid;
             border-radius: 10px;
-            background-color: main.$background-input;
+            background-color: $background-input;
 
             &:focus {
-                border: main.$main-color 1px solid;
-                @include main.button-hover-light
+                border: $main-color 1px solid;
+                @include button-hover-light
             }
         }
 
         label {
             width: 64px;
-            color: main.$second-color;
+            color: $second-color;
 
         }
 

@@ -1,4 +1,4 @@
-@use './main.scss';
+@use './main' as *;
 
 .spinner-container {
     display: flex;
@@ -8,7 +8,7 @@
     .loading-spinner {
         border: 6px solid #04051a;
         /* Couleur de la bordure */
-        border-top: 6px solid main.$main-color;
+        border-top: 6px solid $main-color;
         /* Couleur de l'animation */
         border-radius: 50%;
         width: 12px;

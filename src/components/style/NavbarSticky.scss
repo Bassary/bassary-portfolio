@@ -1,4 +1,4 @@
-@use './main.scss';
+@use './main' as *;
 
 .navbar-sticky {
     display: flex;
@@ -15,7 +15,7 @@
 
 .navbar-sticky a {
     text-decoration: none;
-    color: main.$second-color;
+    color: $second-color;
     font-weight: 500;
     padding: 8px 16px;
     font-family: "Inter", sans-serif;
@@ -25,16 +25,16 @@
 }
 
 .navbar-sticky a:hover {
-    border: 2px solid main.$second-color;
-    color: main.$main-button-hover;
+    border: 2px solid $second-color;
+    color: $main-button-hover;
     border-radius: 50px;
     transition: ease-in-out 250ms;
-    @include main.button-hover-light
+    @include button-hover-light
 }
 
 .navbar-sticky a.active {
-    border: 2px solid main.$main-button-hover;
+    border: 2px solid $main-button-hover;
     border-radius: 50px;
-    color: main.$main-button-hover;
-    @include main.button-hover-light
+    color: $main-button-hover;
+    @include button-hover-light
 }

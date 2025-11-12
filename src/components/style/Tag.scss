@@ -1,4 +1,4 @@
-@use './main.scss';
+@use './main' as *;
 
 .tag {
     display: flex;
@@ -8,12 +8,12 @@
     border-radius: 5px;
     padding: 3px 12px;
     width: fit-content;
-    background-color: main.$background-tag;
+    background-color: $background-tag;
     transition: ease-in-out 150ms;
 
     &:hover {
         transform: scale(1.06);
-        @include main.tag-hover-light;
+        @include tag-hover-light;
         background-color: #f1b3fd;
     }
 
