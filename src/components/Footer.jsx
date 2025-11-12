@@ -5,7 +5,7 @@ function Footer() {
     return (
         <footer>
             <div className="container-footer">
-                <img src="./src/assets/logo.svg" alt="logo bassary" />
+                <img src="assets/logo.svg" alt="logo bassary" />
             <div>
                 <Link to={"/mon-parcours"} className="footer-button">
                     Mon parcours
