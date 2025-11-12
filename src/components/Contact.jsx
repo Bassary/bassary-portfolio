@@ -4,10 +4,12 @@ import './style/Contact.scss';
 import Spinner from './Spiner';
 import Alert from './Alert';
 
+const emailJsServiceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const emailJsTemplateId = import.meta.env.VITE_TEMPLATE_ID;
+const emailJsKey = import.meta.env.VITE_EMAILJS_KEY;
+
 export const Contact = () => {
-    const emailJsServiceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-    const emailJsTemplateId = import.meta.env.VITE_TEMPLATE_ID;
-    const emailJsKey = import.meta.env.VITE_EMAILJS_KEY;
+    
 
     const [isLoading, setIsLoading] = useState(false);
     const [showButton, setShowButton] = useState(true);
