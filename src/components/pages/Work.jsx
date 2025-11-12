@@ -21,7 +21,7 @@ function Work() {
                     <div className='parent'>
                         <div className='container-site-web'>
                             <CardSiteWeb
-                                backgroundImage={<img className='background-image' src='./src/assets/capture-lokowls.png'/>}
+                                backgroundImage={<img className='background-image' src='assets/capture-lokowls.png'/>}
                                 title={"Lokowls"}
                                 texteCategorie={"Site vitrine pour monteur vidéo"}
                                 texteRealisation={"Direction artistique, design, maquette, intégration, production"}
@@ -41,7 +41,7 @@ function Work() {
                         </div>
                         <div className='container-site-web'>
                             <CardSiteWeb
-                                backgroundImage={<img className='background-image' src='./src/assets/capture-ohmyfood.png'/>}
+                                backgroundImage={<img className='background-image' src='assets/capture-ohmyfood.png'/>}
                                 title={"Ohmyfood"}
                                 texteCategorie={"Composition de menu"}
                                 texteRealisation={"intégration, responsive, animation, transition"}
@@ -57,7 +57,7 @@ function Work() {
                         </div>
                         <div className='container-site-web'>
                             <CardSiteWeb
-                                backgroundImage={<img className='background-image' src='./src/assets/capture-sophiebluel.png'/>}
+                                backgroundImage={<img className='background-image' src='assets/capture-sophiebluel.png'/>}
                                 title={"Sophie Bluel"}
                                 texteCategorie={"Site vitrine pour architecte d'intérieur"}
                                 texteRealisation={"intégration en JavaScript, communication avec l'API"}
@@ -75,7 +75,7 @@ function Work() {
                         </div>
                         <div className='container-site-web'>
                             <CardSiteWeb
-                                backgroundImage={<img className='background-image' src='./src/assets/capture-argentbank.png'/>}
+                                backgroundImage={<img className='background-image' src='assets/capture-argentbank.png'/>}
                                 title={"ArgentBank"}
                                 texteCategorie={"Application bancaire"}
                                 texteRealisation={"Intégration, connexion, récupération des données"}

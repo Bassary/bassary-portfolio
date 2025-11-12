@@ -21,7 +21,7 @@ function FormContact () {
                     </div>
                     <Contact />
                 </div>
-                <img className='illustration' src='./src/assets/illustration_contact.svg'/>
+                <img className='illustration' src='assets/illustration_contact.svg'/>
             </TopChangeAnimation>
             
         </main>

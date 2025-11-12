@@ -66,36 +66,36 @@ function About() {
                             </div>
                         </div>
                         <div className='container__illustration'>
-                            <img className='illustration-parcours' src='./src/assets/illustration_parcours.svg'/>
+                            <img className='illustration-parcours' src='assets/illustration_parcours.svg'/>
                         </div>
                 </TopChangeAnimation>
                 <TopScrollAnimation className={"section-outils-about"}>
                      <div className='section-outils-about__logo'>
-                        <img src='./src/assets/logo_react.svg' alt='React'/>
+                        <img src='assets/logo_react.svg' alt='React'/>
                         <p>React</p>
                     </div>
                     <div className='section-outils-about__logo'>
-                        <img src='./src/assets/logo_js.svg' alt='JavaScript'/>
+                        <img src='assets/logo_js.svg' alt='JavaScript'/>
                         <p>JavaScript</p>
                     </div>
                     <div className='section-outils-about__logo'>
-                        <img src='./src/assets/logo_redux.svg' alt='Redux'/>
+                        <img src='assets/logo_redux.svg' alt='Redux'/>
                         <p>Redux</p>
                     </div>
                     <div className='section-outils-about__logo'>
-                        <img src='./src/assets/logo_figma.svg' alt='Figma'/>
+                        <img src='assets/logo_figma.svg' alt='Figma'/>
                         <p>Figma</p>
                     </div>
                     <div className='section-outils-about__logo'>
-                        <img src='./src/assets/logo_sass.svg' alt='Sass'/>
+                        <img src='assets/logo_sass.svg' alt='Sass'/>
                         <p>Sass</p>
                     </div>
                     <div className='section-outils-about__logo'>
-                        <img src='./src/assets/logo_github.svg' alt='GitHub'/>
+                        <img src='assets/logo_github.svg' alt='GitHub'/>
                         <p>Github</p>
                     </div>
                     <div className='section-outils-about__logo'>
-                        <img src='./src/assets/logo_notion.svg' alt='Notion'/>
+                        <img src='assets/logo_notion.svg' alt='Notion'/>
                         <p>Notion</p>
                     </div>
                 </TopScrollAnimation>
@@ -103,12 +103,12 @@ function About() {
                 <TopScrollAnimation className={"section-devis"} delay={0.2}>
                     <div className='section-devis__card'>
                         <Card
-                        image={<img src='./src/assets/logo_check.svg' alt='logo check'/>}
+                        image={<img src='assets/logo_check.svg' alt='logo check'/>}
                         title={"Challenge accepted !"}
                         texte={"Chaque projet est un nouveau défi que j’aime relever. Prendre le temps de comprendre les enjeux de votre demande pour mettre en valeur votre projet et lui donner vie constitue la colonne vertébrale de mon métier."}
                     />
                     <Card
-                        image={<img src='./src/assets/logo_oeil.svg' alt='logo check'/>}
+                        image={<img src='assets/logo_oeil.svg' alt='logo check'/>}
                         title={"Voir au delà"}
                         texte={"Par expérience, je sais qu’il est difficile d’appréhender un projet dans son ensemble. C’est pourquoi je prends le temps d’aller plus loin avec vous, de voir les détails : pour éviter les mauvaises surprises et maximiser les opportunités."}
                     />
