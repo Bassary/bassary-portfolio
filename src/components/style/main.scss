@@ -180,6 +180,12 @@ textarea {
 
 @media (max-width: 1080px) {
 
+    main {
+        gap: 50px;
+        margin-left: 9px;
+        margin-right: 9px;
+    }
+
     .container-footer,
     .navbar {
         padding: 9px 9px;
@@ -190,17 +196,11 @@ textarea {
         }
     }
 
-    .section-form {
-        margin-left: 9px !important;
-        margin-right: 9px !important;
-    }
 
 
     section {
         gap: 20px;
         margin-top: 50px;
-        margin-left: 9px;
-        margin-right: 9px;
     }
 
     .h1-frontend {
@@ -237,14 +237,24 @@ textarea {
 
     }
 
+    .section-introduction {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .div-animation {
+        width: 100%;
+    }
+
     .container-card {
         flex-direction: column;
         align-items: center;
         overflow: hidden;
-        width: -moz-available;
-        padding: 48px 24px;
-        margin-left: 0;
-        margin-right: 0;
+        width: -moz-availabl10e;
+        padding: 48px 24px !important;
+        margin: 0 !important;
 
         &__texte {
             width: 100%;
@@ -267,12 +277,10 @@ textarea {
     }
 
     .section-form {
-        margin-left: 18px;
-        margin-right: 18px;
-
 
         &__texte-form {
             width: 100%;
+            margin: 0;
         }
 
         .illustration {
@@ -288,8 +296,7 @@ textarea {
 
         .container {
             position: initial;
-            margin-left: 9px;
-            margin-right: 9px;
+            margin: 0;
 
             &__content {
                 gap: 20px;
@@ -306,7 +313,7 @@ textarea {
 
     }
 
-    .section-outils {
+    .section-outils-about {
         flex-wrap: wrap;
         margin-top: 50px;
         margin-bottom: 50px;
@@ -318,6 +325,12 @@ textarea {
 
     .section-devis {
         margin-bottom: 80px;
+        gap: 20px;
+
+        .container-card {
+            width: auto;
+        }
+
 
         &__card {
             flex-direction: column;
@@ -329,6 +342,7 @@ textarea {
     .tag__content {
         font-size: 14px;
     }
+
 
 
 }

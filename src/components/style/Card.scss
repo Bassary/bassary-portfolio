@@ -14,18 +14,24 @@
     @include background-linear-card;
 }
 
-.container-card {
-    @include container-card;
+.div-animation,
+.section-devis {
 
-    &__texte {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-        overflow: hidden;
+    .container-card {
+        @include container-card;
+
+        &__texte {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            overflow: hidden;
+            align-items: flex-start;
+        }
+
+        &__banner {
+            display: flex;
+            gap: 25px;
+        }
     }
 
-    &__banner {
-        display: flex;
-        gap: 25px;
-    }
 }

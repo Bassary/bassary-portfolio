@@ -24,7 +24,7 @@ function Home() {
             <NavbarSticky />
             <main>
                 <section className='section-introduction'>
-                <TopChangeAnimation>
+                <TopChangeAnimation className={"div-animation"}>
                     <Card
                         title={"Qui suis-je ?"}
                         texte={"Développer et designer Front-End depuis 2025, je crée un équilibre entre technicité, praticité et créativité au service de votre site"}
@@ -32,7 +32,7 @@ function Home() {
                         banner={<BannerFix/>}
                     />
                 </TopChangeAnimation>
-                <TopChangeAnimation delay={0.2}>
+                <TopChangeAnimation delay={0.2} className={"div-animation"}>
                     <Card
                         title={"Mes projets"}
                         texte={"De l’intégration ou d’un site créé de A à Z, découvrez les projets sur lesquels j’ai travaillé"}
