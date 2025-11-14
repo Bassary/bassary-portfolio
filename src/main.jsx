@@ -19,7 +19,7 @@ const router = createBrowserRouter([
       { path: "/contact", element: <FormContact /> },
     ],
   },
-], {basename: '/bassary-portfolio/'});
+]);
 
 createRoot(document.getElementById('root')).render(
     <RouterProvider router={router} />
