@@ -9,7 +9,9 @@ function Card({title, texte, button, banner, image}) {
                 <p>{texte}</p>
                 {banner}
             </div>
-            {button}
+            <div>
+                {button}
+            </div>
         </div>
     )
 }

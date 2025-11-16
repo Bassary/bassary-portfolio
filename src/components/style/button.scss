@@ -4,7 +4,6 @@
 .footer-button {
     text-decoration: none;
     z-index: 99;
-    display: ruby;
     font-family: "Inter", sans-serif;
     padding: 12px 24px;
     border-radius: 50px;
@@ -13,12 +12,16 @@
     transition: ease-in-out 250ms;
     border: none;
     cursor: pointer;
-
 }
 
 #button:hover {
     @include button-hover-light;
     transition: ease-in-out 250ms;
+}
+
+#button {
+    display: flex;
+    width: max-content;
 }
 
 .main-button {
