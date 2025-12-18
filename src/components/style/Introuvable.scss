@@ -1,0 +1,19 @@
+@use './main.scss' as *;
+
+
+.div-error-404 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .error-404 {
+        font-size: 200px;
+    }
+
+    .phrase-error-404 {
+        margin-bottom: 64px;
+    }
+
+}

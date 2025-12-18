@@ -6,6 +6,7 @@ import Home from './components/pages/Home.jsx'
 import Work from './components/pages/Work.jsx'
 import FormContact from './components/pages/FormContact.jsx'
 import Layout from './components/Layout.jsx'
+import Introuvable from './components/pages/Introuvable.jsx'
 
 
 
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
       { path: "/mon-parcours", element: <About /> },
       { path: "/mes-projets", element: <Work /> },
       { path: "/contact", element: <FormContact /> },
+      { path: "*", element: <Introuvable /> },
     ],
   },
 ]);
