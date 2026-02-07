@@ -17,7 +17,7 @@ function Footer() {
                     Contact
                 </Link>
             </div>
-            <p>Tous droits réservés - ©Bassary 2025</p>
+            <p>Tous droits réservés - ©Bassary 2026</p>
 
             </div>
             

@@ -21,6 +21,26 @@ function Work() {
                     <div className='parent'>
                         <div className='container-site-web'>
                             <CardSiteWeb
+                                backgroundImage={<img className='background-image' src='assets/capture-baladi.png'/>}
+                                title={"Baladi"}
+                                texteCategorie={"Restaurant libanais situé à Paris"}
+                                texteRealisation={"Direction artistique, design, maquette, intégration, production"}
+                                texteTechnologie={"React + Vite, TypeScript, Figma"}
+                            />
+                            <div className='container-site-web__button-tag'>
+                                <div className='flex-tag'>
+                                    <Tag content={"Design"}/>
+                                    <Tag content={"React"}/>
+                                    <Tag content={"SEO"}/>
+                                </div>
+                                <div className='container-site-web__button'>
+                                    <Button classname={"main-button"} content={"Visiter le site"} link={"https://www.restaurant-baladi.fr/"} target={'_blank'}/>
+                                    <Button classname={"second-button"} content={"GitHub"} link={"https://github.com/Bassary/Baladi"} target={'_blank'}/>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='container-site-web'>
+                            <CardSiteWeb
                                 backgroundImage={<img className='background-image' src='assets/capture-lokowls.png'/>}
                                 title={"Lokowls"}
                                 texteCategorie={"Site vitrine pour monteur vidéo"}
@@ -53,24 +73,6 @@ function Work() {
                                     <Tag content={"CSS Animation"}/>
                                 </div>
                                 <Button classname={"second-button"} content={"GitHub"} link={"https://github.com/Bassary/OhMyFood"} target={"_blank"}/>
-                            </div>
-                        </div>
-                        <div className='container-site-web'>
-                            <CardSiteWeb
-                                backgroundImage={<img className='background-image' src='assets/capture-sophiebluel.png'/>}
-                                title={"Sophie Bluel"}
-                                texteCategorie={"Site vitrine pour architecte d'intérieur"}
-                                texteRealisation={"intégration en JavaScript, communication avec l'API"}
-                                texteTechnologie={"JavaScript, API, Swagger"}
-                            />
-                            <div className='container-site-web__button-tag'>
-                                <div className='flex-tag'>
-                                    <Tag content={"JavaScript"}/>
-                                    <Tag content={"API"}/>
-                                    <Tag content={"Site dynamique"}/>
-
-                                </div>
-                                <Button classname={"second-button"} content={"GitHub"} link={"https://github.com/Bassary/Sophie-Bluel-Architecte"} target={"_blank"}/>
                             </div>
                         </div>
                         <div className='container-site-web'>

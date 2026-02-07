@@ -31,28 +31,44 @@ function About() {
                                         content={"Autodidacte"}
                                     />
                                 </div>
-                                <p>Développeur React Js junior de 34 ans: après un parcours dans le relationnel et l'artistique,<br></br>
-                                    j’ai découvert le monde du Front-End et du design par hasard en 2021.
+                                <p>Porté par l’envie de créer une application, j’ai commencé à coder sans aucune connaissance préalable.<br></br>
+                                    Grâce à ma détermination, je la développe aujourd’hui par moi-même, ce qui me permet d’acquérir de nouvelles compétences.
                                 </p>
-                                <p>J’ai décidé par la suite de me former professionnellement.<br></br>
-                                    J’ai ainsi suivi une formation en tant qu’intégrateur web chez OpenClassrooms,
-                                    qui prit fin en 2025.
+                                <p>
+                                    Ma patience, ma logique et mon adaptabilité sont mes principaux atouts. <br></br>
+                                    J’ai appris le développement Front-End en autodidacte,
+                                    puis j’ai approfondi mes connaissances avec OpenClassrooms.
+                                    Aujourd’hui, je me diversifie de plus en plus vers des compétences full-stack.
                                 </p>
                             </div>
                             <div className='container__content'>
                                 <h2>Compétences</h2>
                                 <div className='container__tag'>
                                     <Tag
-                                    content={"Front-End"}
+                                    content={"React Js"}
                                     />
                                     <Tag
-                                    content={"React Js"}
+                                    content={"React Native"}
+                                    />
+                                    <Tag
+                                    content={"JavaScript/TypeScript"}
                                     />
                                     <Tag
                                     content={"UI/UX"}
                                     />
+                                </div>
+                                <div className='container__tag'>
                                     <Tag
                                         content={"Relationnel"}
+                                    />
+                                    <Tag
+                                        content={"Organisation"}
+                                    />
+                                    <Tag
+                                        content={"Communication"}
+                                    />
+                                    <Tag
+                                        content={"Patience"}
                                     />
                                 </div>
                                 <p>Entre ma formation et les diverses compétences acquises au fil de mes expériences professionnelles,<br></br>

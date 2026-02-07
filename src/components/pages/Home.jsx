@@ -27,7 +27,7 @@ function Home() {
                 <TopChangeAnimation className={"div-animation"}>
                     <Card
                         title={"Qui suis-je ?"}
-                        texte={"Développer et designer Front-End depuis 2025, je crée un équilibre entre technicité, praticité et créativité au service de votre site"}
+                        texte={"Développer web et d'application en React & React Native, je crée un équilibre entre technicité, praticité et créativité au service de votre marque"}
                         button={<Button classname={"main-button"} content={"Découvrez mon parcours"} link={"/mon-parcours"}/>}
                         banner={<BannerFix/>}
                     />
